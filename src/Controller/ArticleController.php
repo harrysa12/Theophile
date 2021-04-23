@@ -12,9 +12,19 @@ class ArticleController extends AbstractController
 {
 
     /**
+     * @Route("/reborn", name="reborn")
+     */
+    public function reborn(Request $request)
+    {
+        // on renvoie une réponse qui contient de l'HTML à l'aide de twig.
+        return $this->render('article/reborn.html.twig');
+    }
+ 
+
+    /**
      * @Route("/url", name="ROUTE_NAME")
      */
-    public function methodAction(Request $request)
+    public function method(Request $request)
     {
         // on renvoie une réponse qui contient de l'HTML à l'aide de twig.
         return $this->render('article/ton_html.html.twig');

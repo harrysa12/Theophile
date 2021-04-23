@@ -4,6 +4,9 @@
 
 {% block title %}
 
+<br/>
+    <br/>
+    <br/>
 <h1 style="font-size: 46px">...un fossé nous sépare</h1>
 <hr class="small">
 <span class="subheading">Evangile de Jésus-Christ</span>
@@ -14,20 +17,7 @@
 <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {# <div class="antioche-preview">
-                    <a href="{{ path('antioche') }}">
-                        <h2 class="post-title">
-                            La ville d’Antioche, la ville de Homs en Syrie (Emeès)
-                        </h2>
-                        <h3 class="post-subtitle">
-                            De Jérusalem à Antioche
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">{{ article. }}</a> Février 17, 2017</p>
-                </div>
-                <hr> #}
-
-                {% for article in articles %}
+            {% for article in articles %}
                 <div class="post-preview">
                     <a href="{{ url(article.route) }}">
                         <h2 class="post-title">

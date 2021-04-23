@@ -17,6 +17,14 @@ class MainController extends AbstractController
     {
         $articles = [
             [
+                'title' => "N'importe, c'est nouveau 🥰😃",
+                'route' => 'reborn',
+                'author' => 'Harry Christiaens & Benjamin Ellis',
+                'created' => \DateTime::createFromFormat('d-m-Y', '23-02-2020'),
+                'last_modified' => \DateTime::createFromFormat('d-m-Y', '23-02-2020'),
+                'tag' => [''],
+            ],
+            [
                 'title' => 'La ville d’Antioche, la ville de Homs en Syrie (Emeès)',
                 'route' => 'antioche',
                 'author' => 'Harry Christiaens',
